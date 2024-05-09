@@ -1,0 +1,36 @@
+package com.example.lab2_cau6;
+
+public class Employee {
+    private String id;
+    private String name;
+    private Boolean manager;
+
+    public Employee(){};
+    protected String getId() {
+        return id;
+    }
+    protected String getFullName() {
+        return name;
+    }
+
+    public void setManager(Boolean manager) {
+        this.manager = manager;
+    }
+
+    protected void setId(String id) {
+        this.id = id;
+    }
+    protected void setName(String name) {
+        this.name = name;
+    }
+
+    public String toString() {
+        return id + " - " +
+                name;
+    }
+
+    public boolean isManager() {
+        return this.manager;
+    }
+}
+
